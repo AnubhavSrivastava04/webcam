@@ -30,12 +30,12 @@
   
 <body>
   <div id="playercontainer1">
-    <video autoplay="true" id="videoMoviePlayer" controls  style="z-index:-1>
+    <video autoplay="true" id="videoMoviePlayer" controls  style="z-index:-1">
      
     </video>
 </div>
 <div id="container">
-    <video autoplay="true" id="videoElement">
+    <video autoplay="true" id="videoElement" style="z-index:0">
      
     </video>
 </div>
@@ -43,8 +43,8 @@
  var video = document.querySelector("#videoElement");
  var videoplayer = document.querySelector("#videoMoviePlayer");
   videoplayer.src="https://anubhavsrivastava04.github.io/webcam/big_buck_bunny.mp4";
-  videoplayer.width="800";
-  videoplayer.height="600";
+  videoplayer.width="1000";
+  videoplayer.height="800";
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
  
 if (navigator.getUserMedia) {       
