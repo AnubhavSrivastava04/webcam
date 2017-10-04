@@ -21,16 +21,16 @@
     border: 10px #333 solid;
 }
 #videoElement {
-    width: 500px;
-    height: 375px;
+    width: 300px;
+    height: 175px;
     background-color: #666;
 }
 </style>
 </head>
   
 <body>
-  <div id="playercontainer" style="z-index:-1">
-    <video autoplay="true" id="videoMoviePlayer" controls>
+  <div id="playercontainer1">
+    <video autoplay="true" id="videoMoviePlayer" controls  style="z-index:-1>
      
     </video>
 </div>
@@ -43,6 +43,8 @@
  var video = document.querySelector("#videoElement");
  var videoplayer = document.querySelector("#videoMoviePlayer");
   videoplayer.src="https://anubhavsrivastava04.github.io/webcam/big_buck_bunny.mp4";
+  videoplayer.width="800";
+  videoplayer.height="600";
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
  
 if (navigator.getUserMedia) {       
