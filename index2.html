@@ -10,32 +10,33 @@
 <style>
   #playercontainer {
     margin: 0px auto;
-    width: 800px;
-    height: 600px;
     border: 5px #333 solid;
+     z-index: -1;
 }
 #container {
     margin: 0px auto;
-    width: 500px;
-    height: 375px;
+    width: 300px;
+    height: 175px;
     border: 10px #333 solid;
+    z-index: 0;
 }
 #videoElement {
     width: 300px;
     height: 175px;
     background-color: #666;
+    z-index: 0;
 }
 </style>
 </head>
   
 <body>
   <div id="playercontainer1">
-    <video autoplay="true" id="videoMoviePlayer" controls  style="z-index:-1">
+    <video autoplay="true" id="videoMoviePlayer" controls>
      
     </video>
 </div>
 <div id="container">
-    <video autoplay="true" id="videoElement" style="z-index:0">
+    <video autoplay="true" id="videoElement">
      
     </video>
 </div>
