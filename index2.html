@@ -31,20 +31,20 @@
 </head>
   
 <body>
-  <div id="playercontainer1">
+  <!--div id="playercontainer1">
     <video autoplay="true" id="videoMoviePlayer" controls style="z-index:-1;position:absolute;left:0px;top:0px">
      
     </video>
-</div>
+</div-->
 <div id="container1">
     <video autoplay="true" id="videoElement" style="z-index:2;position:absolute;left:600px;top:0px">
-     <button id="startbutton" style="z-index:2;position:absolute;left:600px">Take photo</button>
+     <button id="startbutton" style="z-index:2;position:absolute;left:600px;top:100px">Take photo</button>
     </video>
 </div>
-   <canvas id="canvas" style="z-index:2;position:absolute;left:600px>
+   <canvas id="canvas" style="z-index:2;position:absolute;left:600px">
   </canvas>
   <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box." style="z-index:2;position:absolute;left:600px> 
+    <img id="photo" alt="The screen capture will appear in this box." style="z-index:2;position:absolute;left:600px"> 
   </div>
 <script>
  var video = document.querySelector("#videoElement");
