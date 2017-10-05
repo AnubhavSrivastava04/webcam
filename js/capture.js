@@ -68,10 +68,24 @@
       }
     }, false);
 
-    startbutton.addEventListener('click', function(ev){
+    
+     startbutton.addEventListener('click', function(ev) {
+    var intervalID = setInterval(function(ev) {
+        //  Do whatever in here that happens every 3 seconds
+	function(ev){
       takepicture();
       ev.preventDefault();
-    }, false);
+    }
+    }, 3000);
+    setTimeout(function() {
+        clearInterval(intervalID);
+    }, 18000);
+}, false);
+    
+//    startbutton.addEventListener('click', function(ev){
+//      takepicture();
+//      ev.preventDefault();
+//    }, false);
     
     clearphoto();
   }
