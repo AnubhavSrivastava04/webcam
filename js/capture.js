@@ -112,6 +112,7 @@ startbutton.addEventListener('click', function(ev){
     
       var data = canvas.toDataURL('image/png');
       photo.setAttribute('src', data);
+      var dataByte = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream");
     } else {
       clearphoto();
     }
